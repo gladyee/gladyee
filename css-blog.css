@@ -1,4 +1,250 @@
 
+      <![CDATA[
+/*-----------------------------------------------------------------------------
+
+---------------------------------------------------------------------------- */
+
+/* ===============================================
+ TABLE OF CONTENT
+==================================================
+	00. VARIABLES
+	01. CSS REST
+	02. HEADER
+	03. INTRO SLIDER POSTS
+	04. ERROR PAGE
+	05. MAIN CONTENT
+	06. SINGLE POST
+	07. SINGLE PAGE
+	08. COMMENT
+	09. SIDEBAR
+	10. INSTAGRAM WIDGET
+	11. FOOTER
+	12. FOOTER SOCIAL ICONS
+	13. FOOTER MENU
+	14. COPYRIGHT
+	15. SHORTCODES
+	16. TYPOGRAPHY
+	17. RESPONSIVE STYLE
+=================================================
+ 00. Variable definitions
+===============================================*/
+
+/*
+<Group description="Main Body" selector="body">
+<Variable name="body.background" description="Body Background" type="background" default="$(color) none repeat scroll top left" value="#FFF none no-repeat scroll center center"/>
+<Variable name="main.font" description="Main Font" type="font" default="normal normal 14px 'Montserrat' " value="normal normal 17px Rubik"/>
+</Group>
+
+
+<Group description="Template Colors" selector=".color-bg">
+  <Variable name="keycolor" description="Main Color" type="color" default="#f1c232" value="#008888"/>
+  <Variable name="keycolor3" description="First" type="color" default="#8E54E9" value="#134f5c"/>
+  <Variable name="keycolor2" description="Second" type="color" default="#4776E6" value="#51a8bf"/>
+</Group>
+
+
+
+<Group description="Top Menu" selector="#topbar">
+	<Variable name="top.menu.font" description="Top Menu Font" type="font" default="normal normal 11px 'Montserrat'" value="normal normal 11px Verdana, Geneva, sans-serif"/>
+</Group>
+
+<Group description="Main Menu" selector="#menu-wrapper">
+	<Variable name="menu.font" description="Main Menu Font" type="font" default="normal normal 13px 'Basic'" value="normal bold 15.5px Rubik, Muli, PT Sans Narrow"/>
+</Group>
+
+<Group description="Slider Font" selector="#intro-slider">
+	<Variable name="slider.font" description="Slider Font" type="font" default="normal bold 35px 'Montserrat' " value="normal bold 35px Rubik, Muli, PT Sans Narrow"/>
+</Group>
+
+<Group description="Favourite Posts Style" selector=".f-p .container">
+	<Variable name="favourite.title.font" description="Favourite Posts Title" type="font" default="normal normal 17px 'Montserrat' " value="normal normal 19px PT Sans Narrow"/>
+	<Variable name="favourite.font" description="Favourite Posts Font" type="font" default="normal normal 15px 'Montserrat' " value="normal normal 15px PT Sans Narrow"/>
+</Group>
+
+<Group description="Post Body" selector=".post-info">
+	<Variable name="post.title.font" description="Post Title Font" type="font" default="normal bold 23px 'Montserrat'" value="normal bold 19px Rubik, Muli, PT Sans Narrow"/>
+	<Variable name="item.post.title.font" description="Post Title Font In Singel Page" type="font" default="normal bold 30px 'Montserrat' " value="normal bold 29px Rubik, Muli, PT Sans Narrow"/>
+	<Variable name="post.title.color" description="Post Title Color" type="color" default="#444" value="#444444"/>
+</Group>
+
+<Group description="Sidebar Style" selector=".sidebar .widget h2">
+	<Variable name="sidebar.font" description="Sidebar Font" type="font" default="normal normal 15px 'Montserrat' " value="normal bold 19px Rubik, Muli, PT Sans Narrow"/>
+	<Variable name="sidebar.color" description="Sidebar Color" type="color" default="#333" value="#f9f9fc"/>
+</Group>
+
+<Group description="Footer style" selector="#footer-wrapper">
+	<Variable name="footer.menu.font" description="Top Menu Font" type="font" default="normal normal 13px 'Montserrat'" value="normal bold 14px Rubik, Muli, PT Sans Narrow"/>
+</Group>
+
+
+
+
+<Group description="New Comment Required - Dont edit">
+
+<Variable name="body.font" description="Font" type="font" default="normal normal 14px 'roboto', sans-serif" value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#222" value="#222222"/>
+<Variable name="body.text.font" description="2"
+      type="font"
+      default="$(body.font)" value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+<Variable name="posts.background.color" description="6"
+      type="color"
+      default="#fff" value="#ffffff"/>
+<Variable name="body.link.color" description="7"
+      type="color"
+      default="#2196f3" value="#2196f3"/>
+<Variable name="body.link.visited.color" description="8"
+      type="color"
+      default="$(body.link.color)" value="#2196f3"/>
+<Variable name="body.link.hover.color" description="9"
+      type="color"
+      default="$(body.link.color)" value="#2196f3"/>
+<Variable name="blog.title.font" description="10"
+      type="font"
+      default="$(robotoBold45)" value="$(robotoBold45)"/>
+<Variable name="blog.title.color" description="11"
+      type="color"
+      default="#fff" value="#ffffff"/>
+<Variable name="header.icons.color"
+      description="12"
+      type="color"
+      default="#fff" value="#ffffff"/>
+<Variable name="tabs.font" description="13"
+      type="font"
+      family="$(body.font.family)"
+      size="$(body.font.size)"
+      default="700 normal $(size) $(family)" value="700 normal $(size) $(family)"/>
+<Variable name="tabs.color" description="14"
+      type="color"
+      default="#ccc" value="#cccccc"/>
+<Variable name="tabs.selected.color" description="15"
+      type="color"
+      default="#fff" value="#ffffff"/>
+<Variable name="tabs.overflow.background.color" description="16"
+      type="color"
+      default="$(posts.background.color)" value="#ffffff"/>
+<Variable name="tabs.overflow.color" description="17"
+      type="color"
+      default="$(posts.text.color)" value="#222222"/>
+<Variable name="tabs.overflow.selected.color" description="18"
+      type="color"
+      default="$(posts.title.color)" value="#212121"/>
+<Variable name="posts.title.color" description="19"
+      type="color"
+      default="#212121" value="#212121"/>
+<Variable name="posts.title.font" description="20"
+      type="font"
+      default="$(robotoBold22)" value="$(robotoBold22)"/>
+<Variable name="posts.text.font" description="21"
+      type="font"
+      default="$(body.text.font)" value="normal normal 15px &#39;roboto&#39;, sans-serif"/>
+<Variable name="posts.text.color" description="22"
+      type="color"
+      default="$(body.text.color)" value="#222222"/>
+<Variable name="posts.icons.color"
+      description="23"
+      type="color"
+      default="#707070" value="#707070"/>
+<Variable name="labels.background.color"
+      description="24"
+      type="color"
+      default="$(sidebar.backgroundColorTopHD)" value="$(sidebar.backgroundColorTopHD)"/>
+</Group>
+
+
+*/
+
+/*========================================
+ 01. CSS REST
+=========================================*/
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, td, th, tr {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	font: normal 15px Muli, sans-serif, Roboto, fontawesome, arial, tahoma;
+	color: #222;
+	line-height: 27px; 
+font-weight: 500;
+	
+}
+
+.color-bg, a.color-bg-hover:hover, .color-bg-hover:hover {
+	background-color: $(keycolor);
+}
+a.border-color, .border-color, a.border-color-hover:hover, .border-color-hover:hover {
+	border-color: $(keycolor);
+}
+.mfont, h1, h2, h3, h4, h5, h6 {
+	font: $(main.font);
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none; width: 100%;
+}
+*, :before, :after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+audio, canvas, video {
+	display: inline-block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+iframe {
+	width: 100%;
+}
+.section {
+	margin: 0;
+}
+.widget {
+	margin: 0;
+	line-height: inherit;
+}
+.widget ul {
+	padding: 0;
+}
+.feed-links {
+	display: none;
+}
+img {
+	max-width: 100%; height: auto;
+}
+* {
+	outline: 0;
+}
+*, :before, :after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.container:before, .container:after {
+	content: " ";
+	display: table;
+}
+.row {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+
 
 /*========================================
  02. HEADER
@@ -6596,3 +6842,6 @@ body.index.grid-style .post-title a, body.archive.grid-style .post-title a {
 	color: #000 ; max-height:75px;  text-align:center; font-size:17px;
 }
 }
+   
+    
+    ]]>
